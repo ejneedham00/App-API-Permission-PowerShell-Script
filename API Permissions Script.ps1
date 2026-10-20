@@ -3,7 +3,7 @@ Connect-MgGraph -Scopes "Application.Read.All","Directory.Read.All"
 
 # Set the variables for the App ID and assigned permission you want to find
 $ApiAppId = "********-****-****-****-************"
-$PermissionName = "user.readwrite"
+$PermissionName = "user.readwrite.all"
 
 # Get the API Service Principal
 $ApiSP = Get-MgServicePrincipal -Filter "appId eq '$ApiAppId'"
